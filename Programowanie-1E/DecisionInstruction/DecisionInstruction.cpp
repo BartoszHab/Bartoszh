@@ -14,12 +14,14 @@ void task1()
     std::cin >> secondNumber;
 
 
-    
-    quotient = firstNumber / secondNumber;
+    if(secondNumber !=0)
+        quotient = firstNumber / secondNumber;
 
-    
+    if(secondNumber !=0)
     std::cout << "Iloraz: " << quotient << "\n";
 
+    if (secondNumber == 0)
+        std::cout << "dzielienie przez zero!!!\n";
 
 
 }
