@@ -64,10 +64,29 @@ void task2() // Napisz funkcje  ktora wczyta liczbe i sprawdzi czy jest dodatnia
         std::cout << " Liczba rowna lub mniejsza od zera";
 
 
+}
+
+void task3()
+{
+    int numberToCheck;
+
+    std::cout << "Podaj liczbe do sprawdzenia: \n";
+    std::cin >> numberToCheck;
+
+    std::cout << "Liczba jest w zakresie\n";
+    std::cout << "Liczba nie jest w zakresie\n";
+
+    if (numberToCheck >= 10)
+      if (numberToCheck <= 25)
+          std::cout << "Liczba jest w zakresie\n";
+      else
+          std::cout << "Liczba nie jest w zakresie\n";
+    else
+        std::cout << "Liczba nie jest w zakresie\n";
 
 
 
-
+   
 
 
 }
@@ -80,5 +99,6 @@ int main()
 {
     //task1();
      task2();
+     task3();
 }
 
