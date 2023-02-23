@@ -8,7 +8,8 @@ Podstawy programowania:
 4. Program obliczaj¹cy pole ko³a.
 5. Program obliczaj¹cy wartoœæ wyra¿enia a^2 + b^2
 6. Program obliczaj¹cy pole trójk¹ta o podstawie b i wysokoœci h
-7. Program obliczaj¹cy objêtoœæ kuli o promieniu r
+7. Program obliczaj¹cy pole trapezu o podstawach a i b oraz wysokoœci h
+8. Program obliczaj¹cy œredni¹ wa¿on¹ trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
 Pêtle:
 1. Program sprawdzaj¹cy czy podana liczba jest parzysta czy nieparzysta
 2. Program sprawdzaj¹cy czy podana liczba jest dodatnia, ujemna czy równa zero
@@ -18,8 +19,6 @@ Pêtle:
 6.Program sprawdzaj¹cy czy podana data jest poprawna (np. sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
 7. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej temperatury (np. "ciep³o" dla temperatury powy¿ej 20 stopni Celsjusza, "ch³odno" dla temperatury poni¿ej 10 stopni Celsjusza itd.)
 
-8. Program obliczaj¹cy pole trapezu o podstawach a i b oraz wysokoœci h
-9. Program obliczaj¹cy œredni¹ wa¿on¹ trzech liczb z podanymi odpowiednimi wagami w1, w2 i w3.
 Instrukcja If:
 1. Program sprawdzaj¹cy czy podana liczba jest liczb¹ pierwsz¹ (czyli tak¹, która dzieli siê tylko przez 1 i przez siebie sam¹)
 2. Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem (czyli takim, który czytany od ty³u jest taki sam, jak czytany od przodu, np. "kajak")
@@ -61,11 +60,11 @@ void task1()
 	int numberFromUser1, numberFromUser2, result;
 
 	std::cout << "Podaj Pierwsza Liczbe\n";
-		std::cin >> numberFromUser1;
+	std::cin >> numberFromUser1;
 	std::cout << "Podaj Druga Liczbe\n";
-		std::cin >> numberFromUser2;
+	std::cin >> numberFromUser2;
 	result = numberFromUser1 + numberFromUser2;
-		result = result / 2;
+	result = result / 2;
 	std::cout << "Srednia artymetyczna tych liczb to: " << result;
 
 
@@ -75,9 +74,9 @@ void task2()
 {
 	int a, b, P;
 	std::cout << "Podaj dlugosc boku A\n";
-		std::cin >> a;
+	std::cin >> a;
 	std::cout << "Podaj dlugosc boku B\n";
-		std::cin >> b;
+	std::cin >> b;
 	P = a * b;
 	std::cout << "Pole prostokata jest rowne:\n" << P;
 
@@ -87,50 +86,50 @@ void task3()
 {
 	int radius, height, area;
 	std::cout << "Podaj promien: \n";
-		std::cin >> radius;
+	std::cin >> radius;
 	std::cout << "Podaj wysokosc: \n";
-		std::cin >> height;
-		area = 1 / 3;
+	std::cin >> height;
+	area = 1 / 3;
 }
 void task4()
 {
 	int P, R;
 	std::cout << "Podaj promien kola\n";
-		std::cin >> R;
+	std::cin >> R;
 	R = R * R;
 	P = 3.14 * R;
-		std::cout << "Pole kola wynosi:\n " << P;
+	std::cout << "Pole kola wynosi:\n " << P;
 }
 //5. Program obliczaj¹cy wartoœæ wyra¿enia a^2 + b^2
 void task5() {
 	int firstNumber, secondNumber, result;
 	std::cout << "podaj liczbe A\n";
-		std::cin >> firstNumber;
+	std::cin >> firstNumber;
 	std::cout << "podaj liczbe B\n";
-		std::cin >> secondNumber;
+	std::cin >> secondNumber;
 	firstNumber = firstNumber * firstNumber;
-		secondNumber = secondNumber * secondNumber;
+	secondNumber = secondNumber * secondNumber;
 	result = secondNumber + firstNumber;
-		std::cout << "Wynik to: " << result;
+	std::cout << "Wynik to: " << result;
 }
 //6. Program obliczaj¹cy pole trójk¹ta o podstawie b i wysokoœci h
 void task6() {
 	int firstNumber, secondNumber, result;
 	std::cout << "podaj liczbe A\n";
-		std::cin >> firstNumber;
+	std::cin >> firstNumber;
 	std::cout << "podaj liczbe B\n";
-		std::cin >> secondNumber;
+	std::cin >> secondNumber;
 	firstNumber = 0.5 * firstNumber;
-		result = firstNumber * secondNumber;
+	result = firstNumber * secondNumber;
 	std::cout << "Obj tego trojkata to: " << result;
 }
 //1. Program sprawdzaj¹cy czy podana liczba jest parzysta czy nieparzysta
-void task1()
+void if1()
 {
 	int numberFromUser;
 
 	std::cout << "Podaj liczbe: \n";
-		std::cin >> numberFromUser;
+	std::cin >> numberFromUser;
 
 	if (numberFromUser % 2 == 0)
 	{
@@ -141,12 +140,12 @@ void task1()
 }
 
 //2. Program sprawdzaj¹cy czy podana liczba jest dodatnia, ujemna czy równa zero
-void task2()
+void if2()
 {
 	int numberFromUser;
 
 	std::cout << "Podaj liczbe: \n";
-		std::cin >> numberFromUser;
+	std::cin >> numberFromUser;
 
 	if (numberFromUser > 0)
 		std::cout << "Liczba jest dodatnia\n";
@@ -158,12 +157,12 @@ void task2()
 }
 
 //3. Program sprawdzaj¹cy czy podany rok jest rokiem przestêpnym
-void task3()
+void if3()
 {
 	int numberFromUser;
 
 	std::cout << "Podaj liczbe: \n";
-		std::cin >> numberFromUser;
+	std::cin >> numberFromUser;
 
 	if (numberFromUser % 4 == 0 && numberFromUser % 100 != 0)
 		std::cout << "rok jest przestepny\n";
@@ -172,12 +171,12 @@ void task3()
 }
 
 //4. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej oceny(np. "bardzo dobry" dla oceny 5, "dobry" dla oceny 4 itd.)
-void task4()
+void if4()
 {
 	int numberFromUser;
 
 	std::cout << "Moja ocena to: \n";
-		std::cin >> numberFromUser;
+	std::cin >> numberFromUser;
 
 	switch (numberFromUser)
 	{
@@ -206,10 +205,10 @@ void task4()
 
 //5. Program sprawdzaj¹cy czy podane has³o jest poprawne(np.jeœli has³o jest "abc123", program powinien 
 //    wyœwietliæ "has³o poprawne", jeœli jest inne, powinien wyœwietliæ "has³o niepoprawne").
-void task5()
+void if5()
 {
 	std::string userPassword, userText;
-		userPassword = "Haslo123";
+	userPassword = "Haslo123";
 	std::cout << "podaj has³o:\n";
 	std::cin >> userText;
 
@@ -221,15 +220,15 @@ void task5()
 
 //6.Program sprawdzaj¹cy czy podana data jest poprawna(np.sprawdzaj¹c, czy dzieñ jest z zakresu od 1 do 31, miesi¹c od 1 do 12 itd.)
 
-void task6()
+void if6()
 {
 	int day, month, year;
 	std::cout << "podaj dzien:\n";
-		std::cin >> day;
+	std::cin >> day;
 	std::cout << "podaj miesiac:\n";
-		std::cin >> month;
+	std::cin >> month;
 	std::cout << "podaj rok:\n";
-		std::cin >> year;
+	std::cin >> year;
 
 	if (day < 32 && day >0)
 		std::cout << "Poprawny dzien\n";
@@ -247,27 +246,158 @@ void task6()
 	else
 		std::cout << "Zly rok\n";
 }
-	//7. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej temperatury(np. "ciep³o" dla temperatury
+//7. Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej temperatury(np. "ciep³o" dla temperatury
 //powy¿ej 20 stopni Celsjusza, "ch³odno" dla temperatury poni¿ej 10 stopni Celsjusza itd.)
 
-	void task7()
-	{
-		int temperatur;
-		std::cout << "podaj temerature:\n";
-			std::cin >> temperatur;
+void if8()
+{
+	int temperatur;
+	std::cout << "podaj temerature:\n";
+	std::cin >> temperatur;
 
-			if (temperatur > 19)
-			std::cout << "bardzo cieplo";
-		else
-			if (temperatur > 9 && temperatur < 20)
+	if (temperatur > 19)
+		std::cout << "bardzo cieplo";
+	else
+		if (temperatur > 9 && temperatur < 20)
 			std::cout << "cieplo";
 		else
-			if (temperatur > 0 && temperatur <10)
-			std::cout << "chlodno";
-		else
-			if (temperatur < 1)
-			std::cout << "bardzo chlodno";
+			if (temperatur > 0 && temperatur < 10)
+				std::cout << "chlodno";
+			else
+				if (temperatur < 1)
+					std::cout << "bardzo chlodno";
+}
+
+//1. Program wyœwietlaj¹cy na ekranie kolejne liczby naturalne od 1 do 10
+
+void loopfor1()
+{
+	for (int i = 1; i <= 10; i++)
+		std::cout << i << "\n";
+}
+
+
+
+//2. Program obliczaj¹cy sumê liczb od 1 do 100
+void loopfor2()
+{
+	int resultat = 0;
+	for (int i = 1; i <= 100; i++)
+	{
+		resultat = resultat + i;
+		std::cout << resultat << "\n";
 	}
+}
+
+//3. Program wyœwietlaj¹cy na ekranie kwadraty liczb od 1 do 10 (np. 1, 4, 9, 16 itd.)
+
+void loopfor3()
+{
+	for (int i = 1; i <= 10; i++)
+		std::cout << i * i << "\n";
+}
+
+void loopfor4()
+{
+	int i2 = 1, sume = 1;
+	for (int i = 1; i <= 10; i++)
+	{
+		if (i2 <= i)
+		{
+			sume = sume * i2;
+			i2++;
+			std::cout << sume << "\n";
+		}
+	}
+}
+
+//5. Program wyœwietlaj¹cy na ekranie tabliczkê mno¿enia od 1 do 9 (np. 1x1=1, 1x2=2, 1x3=3 itd.).
+
+void loopfor5()
+{
+	int first = 1, second = 1;
+	for (int i = 1; i < 11; i++)
+	{
+		std::cout << first << "*" << i << "=" << first * i << " \n";
+		second++;
+		if (i == 10)
+		{
+			i = 0;
+			first++;
+		}
+
+		if (first >= 11)
+			i == 100;
+	}
+}
+
+//6. Program wyœwietlaj¹cy na ekranie wszystkie liczby podzielne przez 3 z zakresu od 1 do 100
+void loopfor6()
+{
+	int left;
+	for (int i = 1; i <= 100; i++)
+	{
+		left = i % 3;
+
+		if (left == 0)
+			std::cout << i << "\n";
+	}
+
+}
+
+//7. Program obliczaj¹cy sumê kwadratów liczb od 1 do 10
+
+void loopfor7()
+{
+	int sum = 0, multiplication;
+	for (int i = 1; i <= 10; i++)
+	{
+		multiplication = i * i;
+		sum = multiplication + sum;
+		std::cout << i << "*" << i << " = " << multiplication << "======>" << sum << "\n";
+
+	}
+
+}
+
+//8. Program wyœwietlaj¹cy na ekranie ci¹g Fibonacciego do 20 elementu 
+//(ci¹g Fibonacciego to ci¹g gdzie ka¿dy element jest sum¹ dwóch poprzednich, np. 0, 1, 1, 2, 3, 5, 8, 13 itd.)
+
+void loopfor8()
+{
+	int last = 0, lastsecond = 1, sum;
+
+	for (int i = 1; i <= 20; i++)
+	{
+		sum = last + lastsecond;
+		std::cout << sum << "\n";
+
+		if (last >= lastsecond)
+			lastsecond = sum;
+		else
+			last = sum;
+	}
+}
+
+//9. Program wyœwietlaj¹cy na ekranie kolejne potêgi 2 od 2^0 do 2^10 (np. 2^0, 2^1, 2^2 itd.)
+
+void loopfor9()
+{
+	int multiple = 1, a = 1;
+	for (int i = 0; i <= 10; i++)
+	{
+		a = 1;
+		multiple = 1;
+		while (a <= i)
+		{
+			multiple = 2 * multiple;
+			a++;
+		}
+		std::cout << "2 ^ " << i << " = " << multiple << "\n";
+	}
+
+}
+
 
 
 int main()
@@ -277,12 +407,21 @@ int main()
 	//task4();
 	//task5();
 	//task6();
-	//task1();
-	//task2();
-	//task3();
-	//task4();
-	//task5();
-	//task6();
-	//task7();
-	//task8();
+	//if1();
+	//if2();
+	//if3();
+	//if4();
+	//if5();
+	//if6();
+	//if7();
+	//if8();
+	//loopfor1();
+	//loopfor2();
+	//loopfor3();
+	//loopfor4();
+	//loopfor5();
+	//loopfor6();
+	//loopfor7();
+	//loopfor8();
+	loopfor9();
 }
